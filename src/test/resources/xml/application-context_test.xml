@@ -21,7 +21,7 @@
 
 	<context:annotation-config />
 	<context:component-scan base-package="com.chk0ndanger.springframework.test.component" />
-	<jpa:repositories base-package="com.chk0ndanger.springframework.test.repository"/>
+	<jpa:repositories base-package="com.chk0ndanger.springframework.test.repository" entity-manager-factory-ref="emf" />
 	
 	<import resource="spring-persistence_test.xml" />
 
